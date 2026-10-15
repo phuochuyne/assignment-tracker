@@ -1,0 +1,113 @@
+{
+  "normalizations": {
+    "backend_application_imports": [],
+    "legacy_tailwind_runtime_removed": []
+  },
+  "project_slug": "assignment-tracker",
+  "route_collisions": [
+    {
+      "registered_path": "frontend/features/automatic_deadline_sorting/assignment_dashboard.html",
+      "registered_screen_id": "capability_automatic_deadline_sorting_2088096a.screen.dashboard",
+      "route": "/",
+      "unregistered_path": "frontend/features/single_dashboard_view/dashboard.html",
+      "unregistered_screen_id": "capability_single_dashboard_view_8bb5982d.screen.dashboard"
+    },
+    {
+      "registered_path": "frontend/features/automatic_deadline_sorting/assignment_dashboard.html",
+      "registered_screen_id": "capability_automatic_deadline_sorting_2088096a.screen.dashboard",
+      "route": "/",
+      "unregistered_path": "frontend/features/mark_assignment_as_completed/assignment_dashboard_with_completion_controls.html",
+      "unregistered_screen_id": "capability_mark_assignment_as_completed_1a7f53a5.screen.dashboard"
+    },
+    {
+      "registered_path": "frontend/features/automatic_deadline_sorting/assignment_dashboard.html",
+      "registered_screen_id": "capability_automatic_deadline_sorting_2088096a.screen.dashboard",
+      "route": "/",
+      "unregistered_path": "frontend/features/assignment_card_display/dashboard_card_view.html",
+      "unregistered_screen_id": "capability_assignment_card_display_1b2057db.screen.dashboard_card_view"
+    },
+    {
+      "registered_path": "frontend/features/automatic_deadline_sorting/assignment_dashboard.html",
+      "registered_screen_id": "capability_automatic_deadline_sorting_2088096a.screen.dashboard",
+      "route": "/",
+      "unregistered_path": "frontend/features/assignment_completion_tracking/dashboard_completion_display.html",
+      "unregistered_screen_id": "capability_assignment_completion_tracking_19f07be9.screen.dashboard_completion_display"
+    },
+    {
+      "registered_path": "frontend/features/automatic_deadline_sorting/assignment_dashboard.html",
+      "registered_screen_id": "capability_automatic_deadline_sorting_2088096a.screen.dashboard",
+      "route": "/",
+      "unregistered_path": "frontend/features/overdue_assignment_highlighting/assignment_dashboard_with_overdue_highlighting.html",
+      "unregistered_screen_id": "capability_overdue_assignment_highlighting_a3b2e567.screen.dashboard"
+    },
+    {
+      "registered_path": "frontend/features/automatic_deadline_sorting/assignment_dashboard.html",
+      "registered_screen_id": "capability_automatic_deadline_sorting_2088096a.screen.dashboard",
+      "route": "/",
+      "unregistered_path": "frontend/features/responsive_design/responsive_dashboard_view.html",
+      "unregistered_screen_id": "capability_responsive_design_507cc59c.screen.responsive_dashboard"
+    },
+    {
+      "registered_path": "frontend/features/automatic_deadline_sorting/assignment_dashboard.html",
+      "registered_screen_id": "capability_automatic_deadline_sorting_2088096a.screen.dashboard",
+      "route": "/",
+      "unregistered_path": "frontend/features/color_coded_status_labels/dashboard_with_color_coded_assignments.html",
+      "unregistered_screen_id": "capability_color_coded_status_labels_b6950121.screen.dashboard_with_color_coded_assignments"
+    }
+  ],
+  "runtime_verification": {
+    "errors": [],
+    "valid": true
+  },
+  "schema_version": "frontend-package-manifest-v5",
+  "screen_routes": [
+    {
+      "feature_id": "capability_add_assignment_622b64dc",
+      "path": "frontend/features/add_assignment/add_assignment_form.html",
+      "route": "/add-assignment",
+      "screen_id": "capability_add_assignment_622b64dc.screen.add_assignment_form"
+    },
+    {
+      "feature_id": "capability_add_assignment_622b64dc",
+      "path": "frontend/features/add_assignment/assignment_confirmation.html",
+      "route": "/assignment-added",
+      "screen_id": "capability_add_assignment_622b64dc.screen.assignment_confirmation"
+    },
+    {
+      "feature_id": "capability_localstorage_data_storage_c1936286",
+      "path": "frontend/features/localstorage_data_storage/storage_error.html",
+      "route": "/storage-error",
+      "screen_id": "capability_localstorage_data_storage_c1936286.screen.storage_error"
+    },
+    {
+      "feature_id": "capability_automatic_deadline_sorting_2088096a",
+      "path": "frontend/features/automatic_deadline_sorting/assignment_dashboard.html",
+      "route": "/",
+      "screen_id": "capability_automatic_deadline_sorting_2088096a.screen.dashboard"
+    }
+  ],
+  "source": {
+    "architecture_workspace_id": "51340238-5ec3-4ffd-ae23-007949d24ae7",
+    "backend_package_hash": "91ec4a1a04610a2f518ba0c2ac181890386d7bc041847cb604702cf90f00455b",
+    "backend_package_id": "e44ec595-66cb-414f-84ab-72ae61bccf11",
+    "backend_workspace_id": "4fa741e5-089d-4689-bc89-7a676f88e80c",
+    "feature_hashes": {
+      "capability_add_assignment_622b64dc": "3f788170c356fa2334e4b55426e60f44f2a6eda32c7c91f5e9ffd7b22ee951f8",
+      "capability_assignment_card_display_1b2057db": "1e90ff42136dd4ab1b07f3dd65046d79e71b7b36656d80e3ae4065fb7f11e6f2",
+      "capability_assignment_completion_tracking_19f07be9": "a4316dfa41f15bbdc57e996f0753eb4862f1d182e7c23cefd35683088a85f7cf",
+      "capability_automatic_deadline_sorting_2088096a": "ec2a12d356bddc5e87d2511304ea5052967bb7ee18b747c01847be05ae3b4039",
+      "capability_color_coded_status_labels_b6950121": "3f6cbd7f707fac043a6b040cfa81e03b35e947581a71917ca38b4ca118e4006a",
+      "capability_localstorage_data_storage_c1936286": "17faa2f71f7106e8ed41da54510fd34a7d37462a96624c45d4401608115f102a",
+      "capability_mark_assignment_as_completed_1a7f53a5": "abb9f1fff880ba7ef91367a7a3ea7fb6f3d976032679cd3a681ab18fc5a1e464",
+      "capability_overdue_assignment_highlighting_a3b2e567": "e2d9c80cf87d8853fec21b71969e31350a7eb64e1cf530fbad0ad11451d158a5",
+      "capability_responsive_design_507cc59c": "757a1d272c19893648b5fe609a82f69c728419d23f3735da048c3957cb7a940e",
+      "capability_single_dashboard_view_8bb5982d": "b68c9f2feebe313aeb58360fa54b5e71eaab0830082093fdb9de8580c3799a70"
+    },
+    "foundation_hash": "3cedbe791d82de2805b56c05c0fff2cf86953b840bcc91a719497cafd265d69a",
+    "ui_library": {
+      "compiler_version": "frontend-visual-compiler-v5",
+      "theme": "orange",
+      "version": "zorentia-ui-2"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A simple, private assignment tracker.">
+    <title>Assignment Tracker</title>
+    <link rel="stylesheet" href="/app.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div>
+        <p class="eyebrow">Study dashboard</p>
+        <h1>Assignment Tracker</h1>
+        <p class="subtitle">Track assignments, deadlines and completion status in one place.</p>
+      </div>
+      <p class="privacy-note">Stored privately in this browser</p>
+    </header>
+
+    <main>
+      <section class="summary" aria-label="Assignment summary">
+        <article><span id="upcoming-count">0</span><p>Upcoming</p></article>
+        <article><span id="overdue-count">0</span><p>Overdue</p></article>
+        <article><span id="completed-count">0</span><p>Completed</p></article>
+      </section>
+
+      <section class="panel add-panel" aria-labelledby="add-heading">
+        <div class="section-heading"><div><p class="eyebrow">Add Assignment</p><h2 id="add-heading">What is due next?</h2></div></div>
+        <form id="assignment-form">
+          <label>Assignment title<input id="title" name="title" maxlength="120" placeholder="e.g. Research report" required></label>
+          <label>Unit code<input id="unit-code" name="unit_code" maxlength="20" placeholder="e.g. COMP3850" required></label>
+          <label>Due date<input id="due-date" name="due_date" type="date" required></label>
+          <button type="submit">Add assignment</button>
+        </form>
+        <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+      </section>
+
+      <section class="panel" aria-labelledby="upcoming-heading">
+        <div class="section-heading"><div><p class="eyebrow">Upcoming Deadlines</p><h2 id="upcoming-heading">Your active assignments</h2></div><p>Earliest deadline first</p></div>
+        <div id="active-list" class="assignment-list"></div>
+        <p id="active-empty" class="empty-state">No active assignments yet.</p>
+      </section>
+
+      <section class="panel" aria-labelledby="completed-heading">
+        <div class="section-heading"><div><p class="eyebrow">Assignment Status Tracking</p><h2 id="completed-heading">Completed assignments</h2></div></div>
+        <div id="completed-list" class="assignment-list"></div>
+        <p id="completed-empty" class="empty-state">Completed assignments will appear here.</p>
+      </section>
+    </main>
+
+    <template id="assignment-template">
+      <article class="assignment-card">
+        <label class="completion-control">
+          <input class="completion-toggle" type="checkbox">
+          <span class="checkmark" aria-hidden="true"></span>
+          <span class="sr-only">Mark assignment complete</span>
+        </label>
+        <div class="assignment-copy">
+          <div class="assignment-title-row"><h3></h3><span class="status-badge"></span></div>
+          <p class="assignment-meta"></p>
+        </div>
+      </article>
+    </template>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>
