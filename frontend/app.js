@@ -39,8 +39,12 @@
   }
 
   function createAssignment({ title, unitCode, dueDate }) {
+    const id = typeof crypto.randomUUID === "function"
+      ? crypto.randomUUID()
+      : `${Date.now()}-${Math.random().toString(16).slice(2)}`;
+
     return {
-      id: crypto.randomUUID(),
+      id,
       title: title.trim(),
       unitCode: unitCode.trim().toUpperCase(),
       dueDate,
